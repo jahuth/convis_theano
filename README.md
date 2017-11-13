@@ -1,15 +1,21 @@
-# The `convis` package
+# The `Theano` based `convis` package
 
-This python package provides an implementation of the [Virtual Retina](http://www-sop.inria.fr/neuromathcomp/public/software/virtualretina/) developed by Adrien Wohrer. It uses `theano` to simulate spike trains of retinal ganglion cells by directing the input through a number of computation nodes. Each node might do linear or nonlinear computations, eg. convolve the inpute with a spatio-temporal kernel or apply gain control.
+This python package provides an implementation of the [Virtual Retina](http://www-sop.inria.fr/neuromathcomp/public/software/virtualretina/) developed by Adrien Wohrer. It uses `Theano` to simulate spike trains of retinal ganglion cells by directing the input through a number of computation nodes. Each node might do linear or nonlinear computations, eg. convolve the inpute with a spatio-temporal kernel or apply gain control.
 
-TravisCI on the master branch: [![Build Status](https://travis-ci.org/jahuth/convis.svg?branch=master)](https://travis-ci.org/jahuth/convis) 
+:warning: A new version is available at [github.com/jahuth/convis](https://github.com/jahuth/convis) that uses `PyTorch` as a backend.
 
-We are supporting Python 2.7 right now, but are aiming to support Python 3 as well at some point.
+This `Theano` version will not be developed actively in the future since the implementation in `PyTorch` is a cleaner and simpler.
+If *you* are interested in a continued version of `convis` based on `Theano`, let me know!
+
+
+TravisCI on the master branch: [![Build Status](https://travis-ci.org/jahuth/convis_theano.svg?branch=master)](https://travis-ci.org/jahuth/convis_theano) 
+
+This version only supports Python 2.7 right now.
 
 Convis is under development and some features might not work in the current master branch or the PyPi releases.
 If you discover unexpected behaviour, please leave an Issue on github.
 
-Also there are two mailing lists for people interested in Convis:
+Also there are two mailing lists for people interested in Convis (for both the `Theano` and `PyTorch` versions):
 
  * To recieve announcements of changes, please subsribe to: convis-users@googlegroups.com
  * If you want to participate in the development, please subscribe to: convis-dev@googlegroups.com 
